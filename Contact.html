@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type = "text/css" href="css/Contact.css">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href = "index.html"> Luke Edgar </a></li>
+          <li><a href = "index.html#sec-3"> Projects </a></li>
+        </ul>
+      </nav>
+      <nav1>
+        <ul1>
+          <li1><a href = "Contact.html"> Contact</a></li1>
+        </ul1>
+      </nav1>
+    </header>
+      <div class = "contact-form">
+        <form onsubmit ="sendEmail(); reset();">
+          <h3> GET IN TOUCH </h3>
+          <input type = "text" id ="name" placeholder="Your Name" required>
+          <input type = "email" id ="email" placeholder="Email id" required>
+          <input type = "text" id ="phone" placeholder="Phone no.">
+          <textarea type = "text" id ="message" placeholder="How can I help you?" required></textarea>
+          <p>*Please use gmail if available</p>
+          <button type ="submit">Send</button>
+        </form>
+
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script>
+          function sendEmail(){
+            Email.send({
+              Host : "smtp.elasticemail.com",
+              Username : "kedgar3432@gmail.com",
+              Password : "75F836AB00A7B302F01F8A053B487EFCE976",
+              To : 'Luke.Edgar00@outlook.com',
+              From : document.getElementById("email").value,
+              Subject : "New Contract Form Enquiry",
+              Body : "A"
+          }).then(
+            message => alert(message)
+          );
+
+          }
+        </script>
+  </body>
+</html>

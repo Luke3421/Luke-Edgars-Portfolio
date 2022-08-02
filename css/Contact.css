@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+header ul a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  border:transparent;
+  background-color: transparent;
+  padding: 15px 32px;
+}
+
+header ul{
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+header li{
+  float: left;
+  display: inline;
+}
+header ul1 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  border:transparent;
+  background-color: transparent;
+  padding: 15px 32px;
+
+}
+header ul1{
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+header li1{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+nav1{
+  float: right;
+  margin: -50px;
+  padding-right: 50px;
+}
+header ul a:hover{
+  color: white;
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+}
+header ul1 a:hover{
+  color: white;
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+}
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  background-color:#f4f4f4;
+  padding:0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.contact-form{
+  width: 100%;
+  height: 100vh;
+  background: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 5px;
+}
+form h3{
+  font-size:20px;
+  font-weight: lighter;
+  color: darkgray;
+  line-height: 2.0em;
+  margin: 0;
+  letter-spacing: 1.2em;
+  text-shadow: 0px 2px 2px #000;
+}
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font: Arial, Helvetica, sans-serif;
+
+
+}
+form button{
+  padding: 15px;
+  background: cyan;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 20px;
+}
+form button:hover{
+  color: white;
+  background: blue;
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+}

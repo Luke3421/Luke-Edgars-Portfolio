@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width">
+    <meta name = "description" content = "Computer Science student showcasing his projects on a website he programmed himself">
+    <meta name = "keywords" content = "Computer Science, Computer Science Major, Programming, Programming Projects, Software Development, IoT development, datamining"
+
+    <meta name = "author" content = "Luke Edgar">
+    <title>Luke Edgar's Website</title>
+      <link rel="stylesheet" type = "text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href = "index.html"> Luke Edgar </a></li>
+          <li><a href = "#sec-3"> Projects </a></li>
+          <div id = "contactlink">
+          <li><a href = "Contact.html"> Contact</a></li>
+        </div>
+        </ul>
+      </nav>
+
+
+        <div class = "Name">
+          <p><center> Luke Edgar</center></p>
+        </div>
+        <div class = "Description">
+          <p> <center>Computer Science Major, learning <br> how to program and develop software. <br>All showcased on a website I programmed myself </center> </p>
+        </div>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class = 'Sidepanel'>
+
+          <ul2>
+            <a class = "social-icon" href = "https://www.linkedin.com/in/luke-edgar-986579226/" target = "_blank">
+              <li><ion-icon name="logo-linkedin"></ion-icon></li>
+            </a>
+            <a class = "social-icon" href = "https://www.instagram.com/lukeedgar3432/?hl=en" target = "_blank">
+              <li><ion-icon name="logo-instagram"></ion-icon></li>
+            </a>
+
+            <a class = "social-icon" href = "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target = "_blank">
+              <li><ion-icon name="logo-twitter"></ion-icon></li>
+            </a>
+          </ul2>
+
+        </div>
+        <a href="#sec-2">
+          <div class="scroll-down"></div>
+        </a>
+    </header>
+      <section id = "sec-2">
+          <div class = "Work">
+            <p><left> MY WORK </left></p>
+          </div>
+          <div class = "Bio">
+            <p><left> Growing up, I've always had a love for technology and computers.
+            I never truly understood the gravity of coding until my last year of
+            highschool, but I never new what being a computer science major meant. Once starting my journey
+            of Computer Science, I have enjoyed every aspect and continue to hone my skills in programming and development.
+            This webpage is something I have programmed to challenge myself. . .</left></p>
+          </div>
+            <div class = "box">
+              <p> Software Development</p>
+              <li> Java Object Oriented Programming </li>
+              <li> Fun python scripts </li>
+              <li> C++ Algorithms and Data Structures </li>
+              <li> Many python libraries</li>
+            </div>
+        <div class = "box">
+          <p> Info Retrieval/Datamining</p>
+          <li> SQL database creation </li>
+          <li> Dataming from SQL databases, shape files and tif files </li>
+          <li> Good understanding of geopandas/pandas </li>
+        </div>
+          <div class = "box">
+          <p> IoT Development</p>
+          <li> Rasberry Pi: Audio Reactive LED Strips </li>
+          <li> ESP32: Using sensors and breadboard for temperature and humidity </li>
+          <li> Basic breadboard kit</li>
+        </div>
+      </div>
+      <div class = "sec2button">
+        <button type ="submit"><a href ="#sec-3">Projects Below</a></button>
+      </div>
+    </section>
+
+    <section id ="sec-3">
+      <div class ="ProjectsTitle">
+        <p> Projects <p>
+      </div>
+      <table>
+        <tr>
+          <td><b> Name<b> </td>
+          <td><b> Description<b> </td>
+          <td><b> Code<b> </td>
+        </tr>
+
+        <tr>
+          <td> Land Usage for Five Counties in the State of Iowa </td>
+          <td> This script allowed use to compute the Land usage of 5 counties in the state of Iowa. This had been a group project that I had the oppurtunity to co-lead.
+            It was our final project for high performance computing. We where able to grab some TIF files that outline a large group of counties in the state of Iowa. With also having the shape file of all county outlines in our country,
+            we could cut out the counties we wanted by matching the coordinates and iterate through use a geopandas to grab the pixel values.
+            With the pixel values we could see what was most prominent in each county and see how the values grew over the 12 year period. This is all shown with a dynamic graph.</td>
+            <td><a href ="https://github.com/Luke3421/Land-Usage-in-Five-Counties"> Land Usage code</a> <td>
+        </tr>
+        <tr>
+          <td>Conways game of life</td>
+          <td>first interation of conways game of life that is understandably slow, however, based on assignment credentials we needed to use a two dimensional array and adhere to the rules of Conway's game of life which are below.
+            RULES: If the cell is alive, then it stays alive if it has either 2 or 3 live neighbors. If the cell is dead, then it springs to life only in the case that it has 3 live neighbors.</td>
+
+          <td><a href ="https://github.com/Luke3421/Conway-s-Game-of-Life"> Conway's Game Code (First Iteration)</a></td>
+        </tr>
+        <tr>
+          <td>Conway's Game of Life Updgrade</td>
+          <td>Using same base of Conway's game of life but with essentially no for loops to check neighbors.
+            Within this iteration of Conways game of life, it was code that used both my last iterations update function but a new one to see the high performance computing used. This allowed us to see the times of how much faster our new update function was still using the same rules. </td>
+          <td><a href ="https://github.com/Luke3421/Conways-Game-of-Life-Upgrade" > Coway's Game Code (Second Iteration)</td>
+        </tr>
+        <tr>
+          <td> Population Density</td>
+          <td>Using Geopandas and shapefiles to get the population density of five counties and plotting them with matplotlib. </td>
+          <td><a href ="https://github.com/Luke3421/Population-Density">Population Density Code</a> </td>
+        </tr>
+        <tr>
+          <td>Datamining mean responses </td>
+          <td>This was my first datamining project that entailed connecting to a database and grabbing important tables needed to then be merged in the creation of a datawarehouse. With this created we could answer much needed questions and present the information to my professor. </td>
+          <td><a href ="https://github.com/Luke3421/Datamining-Mean-Response"> Mean Response Code</a></td>
+        </tr>
+      </table>
+      <button type ="submit"><a href ".Name">Back to Top</a></button>
+</section>
+  </body>
+</html>
